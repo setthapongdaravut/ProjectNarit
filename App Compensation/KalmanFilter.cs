@@ -126,7 +126,7 @@ namespace App_Compensation
             stopwatch2.Stop();
             tsStop2 = stopwatch2.Elapsed;
             dt = (tsStop1.TotalSeconds-tsStart1.TotalSeconds)+(tsStop2.TotalSeconds-tsStart2.TotalSeconds);
-            Console.WriteLine("Ws = {0}",dt);
+            //Console.WriteLine("Ws = {0}",dt);
             return x;
             
         }

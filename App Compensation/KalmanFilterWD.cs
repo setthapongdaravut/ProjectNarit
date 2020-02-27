@@ -126,7 +126,7 @@ namespace App_Compensation
             stopwatch4.Stop();
             tsStop4 = stopwatch4.Elapsed;
             dt = (tsStop4.TotalSeconds - tsStart4.TotalSeconds) + (tsStop3.TotalSeconds - tsStart3.TotalSeconds);
-            Console.WriteLine("WD = {0}",dt);
+            //Console.WriteLine("WD = {0}",dt);
             return x;
         }
     }

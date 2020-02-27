@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static App_Compensation.NetworkData;
+using static App_Compensation.NetworkData.UDPSocket;
 
 namespace App_Compensation
 {
@@ -32,6 +34,19 @@ namespace App_Compensation
             slider.Top = ((Bunifu.Framework.UI.BunifuFlatButton)sender).Top;
             panel2.Show();
             contain.Hide(); 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            UDPSocket Client = new UDPSocket();
+            Client.Client("127.0.0.1", 27000);
+
+            Client.OnReciveMessage += C_OnReciveMessage;
+        }
+
+        private void C_OnReciveMessage(object sender, MessageEventArgs e)
+        {
+            Console.WriteLine(e.MESSAGE + " " + e.TIMESTAMP.ToString());
         }
     }
 }

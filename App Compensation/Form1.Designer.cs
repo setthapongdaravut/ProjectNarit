@@ -40,8 +40,8 @@
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.contain = new System.Windows.Forms.Panel();
-            this.graphForm1 = new App_Compensation.GraphForm();
             this.dataform1 = new App_Compensation.dataform();
+            this.graphForm1 = new App_Compensation.GraphForm();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -68,7 +68,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(138, 939);
+            this.panel1.Size = new System.Drawing.Size(138, 749);
             this.panel1.TabIndex = 0;
             // 
             // Graph_panel
@@ -188,7 +188,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(138, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1657, 939);
+            this.panel2.Size = new System.Drawing.Size(1232, 749);
             this.panel2.TabIndex = 1;
             // 
             // contain
@@ -197,16 +197,8 @@
             this.contain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contain.Location = new System.Drawing.Point(0, 0);
             this.contain.Name = "contain";
-            this.contain.Size = new System.Drawing.Size(1657, 939);
+            this.contain.Size = new System.Drawing.Size(1232, 749);
             this.contain.TabIndex = 1;
-            // 
-            // graphForm1
-            // 
-            this.graphForm1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.graphForm1.Location = new System.Drawing.Point(0, 0);
-            this.graphForm1.Name = "graphForm1";
-            this.graphForm1.Size = new System.Drawing.Size(1657, 939);
-            this.graphForm1.TabIndex = 0;
             // 
             // dataform1
             // 
@@ -214,15 +206,24 @@
             this.dataform1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataform1.Location = new System.Drawing.Point(0, 0);
             this.dataform1.Name = "dataform1";
-            this.dataform1.Size = new System.Drawing.Size(1657, 939);
+            this.dataform1.Size = new System.Drawing.Size(1232, 749);
             this.dataform1.TabIndex = 0;
+            // 
+            // graphForm1
+            // 
+            this.graphForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.graphForm1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.graphForm1.Location = new System.Drawing.Point(0, 0);
+            this.graphForm1.Name = "graphForm1";
+            this.graphForm1.Size = new System.Drawing.Size(1232, 749);
+            this.graphForm1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1795, 939);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -230,6 +231,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Compensation App";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();

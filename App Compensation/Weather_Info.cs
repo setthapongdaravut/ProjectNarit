@@ -52,7 +52,7 @@ namespace App_Compensation
                 {
                     varianceDir = Variance(WindHIS);
                     InitWind = WindHIS.Sum() / 10.0;
-                    WindDirKFWD.Q = new double[,] { { 5, 0 }, { 0, 1 } }; 
+                    WindDirKFWD.Q = new double[,] { { 1, 0 }, { 0, 2 } }; 
                     WindDirKFWD.R = new double[,] { { 10, 0 }, { 0, 1 } };
                     WindDirKFWD.GetMatrixWD(1.0, varianceDir, InitWind, 1.0);
 
@@ -106,8 +106,8 @@ namespace App_Compensation
                 {
                     varianceSpeed = Variance(WindSpeedHIS);
                     InitWindSpeed = WindSpeedHIS.Sum() / 10.0;
-                    WindSpeedKF.Q = new double[,] { { 1, 0 }, { 0, 1 } };
-                    WindSpeedKF.R = new double[,] { { 10, 0 }, { 0, 1 } };
+                    WindSpeedKF.Q = new double[,] { { 7, 0 }, { 0, 1 } };
+                    WindSpeedKF.R = new double[,] { { 20, 0 }, { 0, 2 } };
                     WindSpeedKF.GetMatrixWS(1.0, varianceSpeed, InitWindSpeed, 1.0);
 
                     WindSpeedCount = -1;
