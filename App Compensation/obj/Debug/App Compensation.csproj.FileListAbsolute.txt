@@ -109,3 +109,45 @@ C:\Users\User\Desktop\Project\Technical\An Improving Telescope Control System vi
 C:\Users\User\Desktop\Project\Technical\An Improving Telescope Control System via Wind Speed and Direction data\App Compensation\App Compensation\bin\Debug\StarMath.pdb
 C:\Users\User\Desktop\Project\Technical\An Improving Telescope Control System via Wind Speed and Direction data\App Compensation\App Compensation\bin\Debug\MathNet.Numerics.dll
 C:\Users\User\Desktop\Project\Technical\An Improving Telescope Control System via Wind Speed and Direction data\App Compensation\App Compensation\bin\Debug\MathNet.Numerics.xml
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\NLog.config
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\App Compensation.exe.config
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\App Compensation.exe
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\App Compensation.pdb
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\MathNet.Numerics.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\Nancy.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\Nancy.Hosting.Self.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\NLog.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\SimpleTCP.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\StarMath.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\ZedGraph.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\MathNet.Numerics.xml
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\Nancy.xml
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\Nancy.Hosting.Self.xml
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\NLog.xml
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\StarMath.pdb
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\ZedGraph.xml
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\User\Source\Repos\App Compensation\App Compensation\obj\Debug\App Compensation.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\App Compensation\App Compensation\obj\Debug\App_Compensation.dataform.resources
+C:\Users\User\Source\Repos\App Compensation\App Compensation\obj\Debug\App_Compensation.Form1.resources
+C:\Users\User\Source\Repos\App Compensation\App Compensation\obj\Debug\App_Compensation.GraphForm.resources
+C:\Users\User\Source\Repos\App Compensation\App Compensation\obj\Debug\App_Compensation.Properties.Resources.resources
+C:\Users\User\Source\Repos\App Compensation\App Compensation\obj\Debug\App Compensation.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\App Compensation\App Compensation\obj\Debug\App Compensation.csproj.CopyComplete
+C:\Users\User\Source\Repos\App Compensation\App Compensation\obj\Debug\App Compensation.exe
+C:\Users\User\Source\Repos\App Compensation\App Compensation\obj\Debug\App Compensation.pdb

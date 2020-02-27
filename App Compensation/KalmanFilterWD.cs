@@ -17,13 +17,14 @@ namespace App_Compensation
         public double[,] Q, R; //Tuning
         private double[,] I = { { 1, 0 }, { 0, 1 } };
         private double b, dt;
-        TimeSpan  tsStop3;
-        TimeSpan  tsStop4;
+        TimeSpan  tsStop3,tsStart3;
+        TimeSpan  tsStop4,tsStart4;
 
 
         public void GetMatrixWD(double H, double P, double x, double b)
         {
             //
+            tsStart3 = stopwatch3.Elapsed;
             stopwatch3.Start();
             //
             double[,] x_new = new double[2, 1];
@@ -50,12 +51,14 @@ namespace App_Compensation
 
             stopwatch3.Stop();
             tsStop3 = stopwatch3.Elapsed;
+            
 
         }
 
 
         public double[,] KalmanFWD(double input)
         {
+            tsStart4 = stopwatch4.Elapsed;
             stopwatch4.Start();
             double[,] y = new double[2, 1];
             double[,] A = new double[2, 2];
@@ -122,10 +125,9 @@ namespace App_Compensation
 
             stopwatch4.Stop();
             tsStop4 = stopwatch4.Elapsed;
-            dt = tsStop4.TotalSeconds + tsStop3.TotalSeconds;
-            Console.WriteLine(dt);
+            dt = (tsStop4.TotalSeconds - tsStart4.TotalSeconds) + (tsStop3.TotalSeconds - tsStart3.TotalSeconds);
+            Console.WriteLine("WD = {0}",dt);
             return x;
-
         }
     }
 }

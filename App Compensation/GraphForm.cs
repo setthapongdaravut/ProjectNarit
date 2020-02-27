@@ -220,7 +220,6 @@ namespace App_Compensation
                 temp.AddPoint(timess, _Weather_Info.Temperature);
 
                 humid.AddPoint(timess, _Weather_Info.Humidity);
-                //Console.WriteLine(timess);
 
                 WindDir_Graph.GraphPane.XAxis.Scale.Max = timess + 1;
                 WindSpeed_Graph.GraphPane.XAxis.Scale.Max = timess + 1;
