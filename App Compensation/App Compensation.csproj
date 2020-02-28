@@ -82,6 +82,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compensation.cs" />
     <Compile Include="DataControl.cs" />
     <Compile Include="dataform.cs">
       <SubType>UserControl</SubType>

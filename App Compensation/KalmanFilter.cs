@@ -116,7 +116,7 @@ namespace App_Compensation
 
             //Kalman Filter 2x2
             x = A.multiply(x).add(w);
-            P = A.multiply(P).multiply(A.transpose()).add(Q); 
+            P = A.multiply(P).multiply(A.transpose()).add(Q);
 
             K = P.multiply(H).multiply((H.multiply(P).multiply(H.transpose()).add(R)).inverse());
             x = x.add(K.multiply(y.subtract(H.multiply(x))));
