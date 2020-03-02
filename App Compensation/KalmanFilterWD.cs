@@ -20,7 +20,7 @@ namespace App_Compensation
         TimeSpan  tsStop3,tsStart3;
         TimeSpan  tsStop4,tsStart4;
 
-
+                
         public void GetMatrixWD(double H, double P, double x, double b)
         {
             //
@@ -44,7 +44,7 @@ namespace App_Compensation
 
                 }
             }
-
+            
             this.H = StarMath.multiply(H, I);
             this.P = StarMath.multiply(P, I);
             this.x = x_new;

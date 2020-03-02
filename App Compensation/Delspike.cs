@@ -51,5 +51,29 @@ namespace App_Compensation
             }
             return x;
         }
+
+        public double DotProduct(double[,] vec1, double[,] vec2)
+        {
+            //if (vec1 == null)
+            //    return 0;
+
+            //if (vec2 == null)
+            //    return 0;
+
+            //if (vec1.Length != vec2.Length)
+            //    return 0;
+
+            double DotVal = 0;
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 1; j++)
+                {
+                    DotVal += vec1[i, j] * vec2[i, j];
+                }
+            }
+
+            return DotVal;
+
+        }
     }
 }

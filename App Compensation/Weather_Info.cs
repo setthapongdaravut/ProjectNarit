@@ -35,8 +35,8 @@ namespace App_Compensation
         private double _Wind_Dir = 0.0;
         private double varianceDir = 0.0;
         private double[,] Wind_Direction_Matrix = new double[,] { { 0 }, { 0 } };
-        
-        
+
+
         public double Wind_Dir
         {
             get { return _Wind_Dir; }
@@ -55,7 +55,7 @@ namespace App_Compensation
                     WindDirKFWD.Q = new double[,] { { 1, 0 }, { 0, 2 } }; 
                     WindDirKFWD.R = new double[,] { { 10, 0 }, { 0, 1 } };
                     WindDirKFWD.GetMatrixWD(1.0, varianceDir, InitWind, 1.0);
-
+                    
                     WindCount = -1;
                 }
 
@@ -84,7 +84,10 @@ namespace App_Compensation
         private double InitWindSpeed = 0.0;
         private int WindSpeedCount = 10;
         private double varianceSpeed = 0.0;
+        private double torque = 0.0;
+        private double scaling = 0.0;
         Delspike ws = new Delspike();
+        Compensation compensation = new Compensation(); //งูกินหาง ควยยยย มึงเรียก object มั่วววว!!!!!
 
         private double[,] Wind_Speed_Matrix = new double[,] { { 0 }, { 0 } };
 
@@ -94,6 +97,9 @@ namespace App_Compensation
             get { return _Wind_Speed; }
             set
             {
+                //if (WindSpeedKF == null)
+                //    WindSpeedKF = new KalmanFilter();
+
                 if (WindSpeedCount > 0)
                 {
                     WindSpeedHIS.Add(ws.Del_WS(value));
@@ -115,6 +121,11 @@ namespace App_Compensation
                 WindSpeedRaw = ws.Del_WS(value);
                 Wind_Speed_Matrix = WindSpeedKF.KalmanFWS(ws.Del_WS(value));
                 _Wind_Speed = Wind_Speed_Matrix[0, 0];
+                scaling = compensation.Compensate(_Wind_Speed, _Wind_Dir);
+                torque = compensation.Torque(_Wind_Speed, scaling);
+                Console.WriteLine("Scaling factor = {0}",scaling);
+                Console.WriteLine("Torque = {0}",torque);
+                
                 WindSpeedCanWrite = true;
 
                 if (TWindSpeedMinMax.Count > 60)
@@ -125,6 +136,7 @@ namespace App_Compensation
                 Wind_Speed_Min = TWindSpeedMinMax.Min();
             }
         }
+        
 
         //Variance Finding
         private double Variance(List<double> values)
